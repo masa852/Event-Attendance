@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		AA7217DB255E8AC000A67830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7217DA255E8AC000A67830 /* AppDelegate.swift */; };
 		AA7217DD255E8AC000A67830 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7217DC255E8AC000A67830 /* SceneDelegate.swift */; };
-		AA7217DF255E8AC000A67830 /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7217DE255E8AC000A67830 /* GroupListViewController.swift */; };
 		AA7217E2255E8AC000A67830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7217E0255E8AC000A67830 /* Main.storyboard */; };
 		AA7217E4255E8AC200A67830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7217E3255E8AC200A67830 /* Assets.xcassets */; };
 		AA7217E7255E8AC200A67830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7217E5255E8AC200A67830 /* LaunchScreen.storyboard */; };
 		AA7217F2255E8AC200A67830 /* Event_AttendanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7217F1255E8AC200A67830 /* Event_AttendanceTests.swift */; };
 		AA7217FD255E8AC200A67830 /* Event_AttendanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7217FC255E8AC200A67830 /* Event_AttendanceUITests.swift */; };
+		AA72180D255EAEF700A67830 /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72180C255EAEF700A67830 /* GroupListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		AA7217D7255E8AC000A67830 /* Event-Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Event-Attendance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7217DA255E8AC000A67830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA7217DC255E8AC000A67830 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA7217DE255E8AC000A67830 /* GroupListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
 		AA7217E1255E8AC000A67830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA7217E3255E8AC200A67830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA7217E6255E8AC200A67830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		AA7217F8255E8AC200A67830 /* Event-AttendanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Event-AttendanceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7217FC255E8AC200A67830 /* Event_AttendanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_AttendanceUITests.swift; sourceTree = "<group>"; };
 		AA7217FE255E8AC200A67830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA72180C255EAEF700A67830 /* GroupListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +99,11 @@
 		AA7217D9255E8AC000A67830 /* Event-Attendance */ = {
 			isa = PBXGroup;
 			children = (
+				AA72180A255EAEEE00A67830 /* Model */,
+				AA72180B255EAEF700A67830 /* View */,
+				AA72180E255EAEFF00A67830 /* Controller */,
 				AA7217DA255E8AC000A67830 /* AppDelegate.swift */,
 				AA7217DC255E8AC000A67830 /* SceneDelegate.swift */,
-				AA7217DE255E8AC000A67830 /* GroupListViewController.swift */,
 				AA7217E0255E8AC000A67830 /* Main.storyboard */,
 				AA7217E3255E8AC200A67830 /* Assets.xcassets */,
 				AA7217E5255E8AC200A67830 /* LaunchScreen.storyboard */,
@@ -126,6 +128,29 @@
 				AA7217FE255E8AC200A67830 /* Info.plist */,
 			);
 			path = "Event-AttendanceUITests";
+			sourceTree = "<group>";
+		};
+		AA72180A255EAEEE00A67830 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA72180B255EAEF700A67830 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA72180C255EAEF700A67830 /* GroupListViewController.swift */,
+			);
+			name = View;
+			path = "Event-Attendance/View";
+			sourceTree = SOURCE_ROOT;
+		};
+		AA72180E255EAEFF00A67830 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA7217DF255E8AC000A67830 /* GroupListViewController.swift in Sources */,
+				AA72180D255EAEF700A67830 /* GroupListViewController.swift in Sources */,
 				AA7217DB255E8AC000A67830 /* AppDelegate.swift in Sources */,
 				AA7217DD255E8AC000A67830 /* SceneDelegate.swift in Sources */,
 			);
