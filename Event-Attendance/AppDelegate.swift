@@ -7,14 +7,35 @@
 //
 
 import UIKit
+import Firebase
+import FBSDKCoreKit
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+@UIApplicationMain class AppDelegate:UIResponder, UIApplicationDelegate {
 
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        //追加
+        FirebaseApp.configure()
 
+        //Facebookログイン
+        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        return true
+    }
+
+      //追加
+    func application(_ application : UIApplication,open url: URL, sourceApplication: String?, annotation: Any)->Bool{
+        return ApplicationDelegate.shared.application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+    }
+
+      //追加
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        AppEvents.activateApp()
+    }
+
+}
+
+/*    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
         return true
     }
 
@@ -32,6 +53,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
-}
+*/
 
