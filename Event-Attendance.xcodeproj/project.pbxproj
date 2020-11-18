@@ -148,6 +148,7 @@
 				AA7217E3255E8AC200A67830 /* Assets.xcassets */,
 				AA7217E5255E8AC200A67830 /* LaunchScreen.storyboard */,
 				AA7217E8255E8AC200A67830 /* Info.plist */,
+				AA54C6AE2563732C009248A4 /* GoogleService-Info.plist */,
 			);
 			path = "Event-Attendance";
 			sourceTree = "<group>";
@@ -166,7 +167,6 @@
 			children = (
 				AA7217FC255E8AC200A67830 /* Event_AttendanceUITests.swift */,
 				AA7217FE255E8AC200A67830 /* Info.plist */,
-				AA54C6AE2563732C009248A4 /* GoogleService-Info.plist */,
 			);
 			path = "Event-AttendanceUITests";
 			sourceTree = "<group>";
