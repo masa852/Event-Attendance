@@ -52,6 +52,7 @@
 		82B9A5AAE2F36258FC1AD5BC /* Pods-Event-AttendanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Event-AttendanceTests.release.xcconfig"; path = "Target Support Files/Pods-Event-AttendanceTests/Pods-Event-AttendanceTests.release.xcconfig"; sourceTree = "<group>"; };
 		9E590C374FAA7C43864B6F65 /* Pods_Event_Attendance_Event_AttendanceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Event_Attendance_Event_AttendanceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3E72814BA0692C5D8EF830D /* Pods-Event-Attendance-Event-AttendanceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Event-Attendance-Event-AttendanceUITests.debug.xcconfig"; path = "Target Support Files/Pods-Event-Attendance-Event-AttendanceUITests/Pods-Event-Attendance-Event-AttendanceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA07F26125653EE100917CC4 /* Event-Attendance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Event-Attendance.entitlements"; sourceTree = "<group>"; };
 		AA54C6AE2563732C009248A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AA54C6B22563E02F009248A4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AA62873D255FA4950049E6F1 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
@@ -137,6 +138,7 @@
 		AA7217D9255E8AC000A67830 /* Event-Attendance */ = {
 			isa = PBXGroup;
 			children = (
+				AA07F26125653EE100917CC4 /* Event-Attendance.entitlements */,
 				AA72180A255EAEEE00A67830 /* Model */,
 				AA72180B255EAEF700A67830 /* View */,
 				AA72180E255EAEFF00A67830 /* Controller */,
@@ -216,6 +218,7 @@
 				AA7217D4255E8AC000A67830 /* Frameworks */,
 				AA7217D5255E8AC000A67830 /* Resources */,
 				9630BA8BD300CB1BCA0F2106 /* [CP] Embed Pods Frameworks */,
+				D62A5ECB0CEE189245E36817 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +257,7 @@
 				AA7217F5255E8AC200A67830 /* Frameworks */,
 				AA7217F6255E8AC200A67830 /* Resources */,
 				AF287F08D8ACDD7DCF21B88F /* [CP] Embed Pods Frameworks */,
+				51A1AD2EDEF5849F65E8E3C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -339,6 +343,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		51A1AD2EDEF5849F65E8E3C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Event-Attendance-Event-AttendanceUITests/Pods-Event-Attendance-Event-AttendanceUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Event-Attendance-Event-AttendanceUITests/Pods-Event-Attendance-Event-AttendanceUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Event-Attendance-Event-AttendanceUITests/Pods-Event-Attendance-Event-AttendanceUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9630BA8BD300CB1BCA0F2106 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,6 +458,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D62A5ECB0CEE189245E36817 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Event-Attendance/Pods-Event-Attendance-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Event-Attendance/Pods-Event-Attendance-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Event-Attendance/Pods-Event-Attendance-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -624,6 +662,7 @@
 			baseConfigurationReference = 1CC2D7BF56A3B28C1610C9A7 /* Pods-Event-Attendance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Event-Attendance/Event-Attendance.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Event-Attendance/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -642,6 +681,7 @@
 			baseConfigurationReference = 6C0BB5A79FCC8FD17FA0E633 /* Pods-Event-Attendance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Event-Attendance/Event-Attendance.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Event-Attendance/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

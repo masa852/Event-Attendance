@@ -8,32 +8,35 @@
 
 import UIKit
 import Firebase
-import FBSDKCoreKit
+import FirebaseUI
 
-@UIApplicationMain class AppDelegate:UIResponder, UIApplicationDelegate {
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        //追加
+    var window: UIWindow?
+
+    override init() {
+        super.init()
+        // Firebase関連の機能を使う前に必要
         FirebaseApp.configure()
+    }
 
-        //Facebookログイン
-        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
-
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         return true
     }
 
-      //追加
-    func application(_ application : UIApplication,open url: URL, sourceApplication: String?, annotation: Any)->Bool{
-        return ApplicationDelegate.shared.application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+    // facebook&Google認証時に呼ばれる関数
+    func application(_ app: UIApplication, open url: URL,
+                     options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+        let sourceApplication = options[UIApplication.OpenURLOptionsKey.sourceApplication] as! String?
+        // GoogleまたはFacebook認証の場合、trueを返す
+        if FUIAuth.defaultAuthUI()?.handleOpen(url, sourceApplication: sourceApplication) ?? false {
+            return true
+        }
+        return false
     }
 
-      //追加
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        AppEvents.activateApp()
-    }
-
-}
-
+ }
 /*    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         return true

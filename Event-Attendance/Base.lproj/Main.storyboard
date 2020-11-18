@@ -53,13 +53,49 @@
                     <view key="view" contentMode="scaleToFill" id="7Xp-O1-qeL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cm6-Qw-6HZ">
+                                <rect key="frame" x="174" y="409" width="85" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Confirm"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="B3s-5G-JKB"/>
                     </view>
+                    <connections>
+                        <outlet property="authButton" destination="Cm6-Qw-6HZ" id="e4h-Mk-Baa"/>
+                        <segue destination="GeK-Ih-wTK" kind="show" identifier="toNextView" id="0SW-vV-EFG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="axD-cx-0Qi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2961" y="106"/>
+            <point key="canvasLocation" x="2960.8695652173915" y="105.80357142857143"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="21C-OQ-V4V">
+            <objects>
+                <viewController id="GeK-Ih-wTK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3a6-Le-jqy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sucess" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtY-z9-8Sw">
+                                <rect key="frame" x="170" y="398" width="100" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="czk-3z-uAZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QCF-pA-au9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jkt-3a-z3J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3798.5507246376815" y="107.8125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9bh-B0-rGX">
