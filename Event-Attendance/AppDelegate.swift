@@ -8,6 +8,67 @@
 
 import UIKit
 import Firebase
+import FBSDKCoreKit //FacebookSDK
+import GoogleSignIn
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
+    
+
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        //追加
+        FirebaseApp.configure()
+
+        //Googleログイン
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
+    
+        //Facebookログイン
+        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+
+        return true
+    }
+    
+    
+    // アプリのデリゲートに application:openURL:options: メソッドを実装します。このメソッドは GIDSignIn インスタンスの handleURL メソッドを呼び出します。これによって、認証プロセスの最後にアプリが受け取る URL が正しく処理されます。
+    @available(iOS 9.0, *)
+    func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any])
+      -> Bool {
+      return GIDSignIn.sharedInstance().handle(url)
+    }
+    // アプリのデリゲートで、ログイン プロセスを処理する GIDSignInDelegate プロトコルを実装するために次のメソッドを定義します。
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
+      // ...
+      if let error = error {
+        // ...
+        return
+      }
+
+      guard let authentication = user.authentication else { return }
+      let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                        accessToken: authentication.accessToken)
+      // ...
+    }
+
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+        // Perform any operations when the user disconnects from app here.
+        // ...
+    }
+
+      //追加
+    func application(_ application : UIApplication,open url: URL, sourceApplication: String?, annotation: Any)->Bool{
+        return ApplicationDelegate.shared.application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+    }
+
+      //追加
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        AppEvents.activateApp()
+    }
+}
+
+/*
+import UIKit
+import Firebase
 import FirebaseUI
 
 @UIApplicationMain
@@ -37,11 +98,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
  }
-   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+ */
+ 
+/*   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         return true
     }
-
+*/
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
