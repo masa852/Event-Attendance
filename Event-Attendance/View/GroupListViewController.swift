@@ -7,7 +7,8 @@
 //
 
 import UIKit
-/*
+import RealmSwift
+
 class GroupListViewController: UITableViewController {
     
     let newGroup = GroupModel()
@@ -23,7 +24,7 @@ class GroupListViewController: UITableViewController {
         let addAction = UIAlertAction(title: "リストに追加", style: .default){ (action) in
         //リストに追加をした時に実行される処理
                   
-//            let newGroup.text = textField.text!
+            self.newGroup.title = textField.text!
                   
         //アイテム追加処理
         //self.itemArray.append(newItem)
@@ -71,13 +72,19 @@ class GroupListViewController: UITableViewController {
             
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
         
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int)-> Int {
-            //gourpItemの数=セルの数
+            //groupItemの数=セルの数
             return groupItem.count
         }
     func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexpath: NSIndexPath)->UITableViewCell{
-            let cell: UITableViewCell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "GroupCell")
+            
+        let cell: UITableViewCell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "GroupCell")
         
             //todoGroupに代入されたデータをobject:NSArrayに代入
             let object = groupItem[indexpath.row]
@@ -91,4 +98,4 @@ class GroupListViewController: UITableViewController {
         
         
 }
-*/
+

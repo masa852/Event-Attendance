@@ -7,10 +7,10 @@
 //
 
 import Foundation
+import RealmSwift
 
-/*
 class GroupModel: Object{
-    //@objc dynamic var title: String? = nil
-    dynamic var title = ""
+    @objc dynamic var title: String? = nil
+    //dynamic var title = ""
 }
-*/
+

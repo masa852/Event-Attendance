@@ -1,4 +1,4 @@
-
+/*
 import UIKit
 import Firebase
 import FBSDKCoreKit
@@ -96,6 +96,7 @@ class LoginViewController: UIViewController , LoginButtonDelegate{
     
 
 }
+ */
 
 /*
 import UIKit
