@@ -11,6 +11,6 @@ import RealmSwift
 
 class GroupModel: Object{
     @objc dynamic var title: String? = nil
-    //dynamic var title = ""
+    // dynamic var title = ""
 }
 

@@ -14,21 +14,31 @@ class GroupListViewController: UITableViewController {
     let newGroup = GroupModel()
     var groupItem: Results<GroupModel>!
     
+    @IBOutlet var groupTableView: UITableView!
     
+    // グループ名追加処理
     @IBAction func tapAddButton(_ sender: Any) {
         
         var textField = UITextField()
-              
+        
         let alert = UIAlertController(title: "新しいグループを追加", message: "",preferredStyle: .alert)
-              
         let addAction = UIAlertAction(title: "リストに追加", style: .default){ (action) in
         //リストに追加をした時に実行される処理
-                  
-            self.newGroup.title = textField.text!
+        self.newGroup.title = textField.text!
+        do{
+        try uiRealm.write({ () -> Void in
+            uiRealm.add(self.newGroup)
+            print(Realm.Configuration.defaultConfiguration.fileURL!)
+            self.groupTableView.reloadData()
+            print("Todo Saved")
+            })
+        }catch{
+            print("Save is Failed")
+        }
                   
         //アイテム追加処理
         //self.itemArray.append(newItem)
-        self.tableView.reloadData()
+        //self.tableView.reloadData()
                   
             }
               
@@ -46,56 +56,60 @@ class GroupListViewController: UITableViewController {
     alert.addAction(addAction)
     alert.addAction(cancelAction)
     present(alert, animated: true, completion: nil)
-    
-    
-    do{
-        let realm = try Realm()
-    try realm.write({ () -> Void in
-        realm.add(newGroup)
-        print("Todo Saved")
-        })
-    }catch{
-        print("Save is Failed")
-    }
+        
+
 }
 
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //DBに保存されたデータの取り出し
         do{
-            let realm = try Realm()
-            groupItem = realm.objects(GroupModel.self)
-            tableView.reloadData()
+            groupItem = uiRealm.objects(GroupModel.self)
+            groupTableView.reloadData()
         }catch{
             
         }
     }
-    
+      
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        tableView.reloadData()
+        groupTableView.reloadData()
     }
         
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int)-> Int {
             //groupItemの数=セルの数
             return groupItem.count
         }
-    func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexpath: NSIndexPath)->UITableViewCell{
-            
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "GroupCell")
-        
-            //todoGroupに代入されたデータをobject:NSArrayに代入
-            let object = groupItem[indexpath.row]
-            
-            //cellのtextLabel.textにobjectのtitleプロパティを代入
-            cell.textLabel?.text = object.title
-            
-            return cell
-            
+              
+                  //todoGroupに代入されたデータをobject:NSArrayに代入
+                  let object = groupItem[indexPath.row]
+                  
+                  //cellのtextLabel.textにobjectのtitleプロパティを代入
+                  cell.textLabel?.text = object.title
+                  
+                  return cell
+    }
+    
+    // TableViewのCellの削除を行った際に、Realmに保存したデータを削除する
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+
+
+        if(editingStyle == UITableViewCell.EditingStyle.delete) {
+            do{
+                try uiRealm.write {
+                    uiRealm.delete(self.groupItem[indexPath.row])
+                }
+                tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.fade)
+            }catch{
+            }
+            tableView.reloadData()
         }
-        
+    }
         
 }
 
