@@ -14,6 +14,7 @@
 		AA54C6B02563732C009248A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA54C6AE2563732C009248A4 /* GoogleService-Info.plist */; };
 		AA54C6B12563732C009248A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA54C6AE2563732C009248A4 /* GoogleService-Info.plist */; };
 		AA54C6B32563E02F009248A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA54C6B22563E02F009248A4 /* LoginViewController.swift */; };
+		AA614F34256AA21700402E3B /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA614F33256AA21700402E3B /* TodoListViewController.swift */; };
 		AA62873E255FA4950049E6F1 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA62873D255FA4950049E6F1 /* GroupModel.swift */; };
 		AA7217DB255E8AC000A67830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7217DA255E8AC000A67830 /* AppDelegate.swift */; };
 		AA7217DD255E8AC000A67830 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7217DC255E8AC000A67830 /* SceneDelegate.swift */; };
@@ -23,6 +24,7 @@
 		AA7217F2255E8AC200A67830 /* Event_AttendanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7217F1255E8AC200A67830 /* Event_AttendanceTests.swift */; };
 		AA7217FD255E8AC200A67830 /* Event_AttendanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7217FC255E8AC200A67830 /* Event_AttendanceUITests.swift */; };
 		AA72180D255EAEF700A67830 /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72180C255EAEF700A67830 /* GroupListViewController.swift */; };
+		AA8BC49B256B6B6D001774D5 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8BC49A256B6B6D001774D5 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,7 @@
 		AA07F26125653EE100917CC4 /* Event-Attendance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Event-Attendance.entitlements"; sourceTree = "<group>"; };
 		AA54C6AE2563732C009248A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AA54C6B22563E02F009248A4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AA614F33256AA21700402E3B /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		AA62873D255FA4950049E6F1 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
 		AA7217D7255E8AC000A67830 /* Event-Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Event-Attendance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7217DA255E8AC000A67830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +73,7 @@
 		AA7217FC255E8AC200A67830 /* Event_AttendanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_AttendanceUITests.swift; sourceTree = "<group>"; };
 		AA7217FE255E8AC200A67830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA72180C255EAEF700A67830 /* GroupListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
+		AA8BC49A256B6B6D001774D5 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 				AA7217DA255E8AC000A67830 /* AppDelegate.swift */,
 				AA7217DC255E8AC000A67830 /* SceneDelegate.swift */,
 				AA7217E0255E8AC000A67830 /* Main.storyboard */,
+				AA8BC49A256B6B6D001774D5 /* CategoryViewController.swift */,
 				AA7217E3255E8AC200A67830 /* Assets.xcassets */,
 				AA7217E5255E8AC200A67830 /* LaunchScreen.storyboard */,
 				AA7217E8255E8AC200A67830 /* Info.plist */,
@@ -182,6 +187,7 @@
 		AA72180B255EAEF700A67830 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AA614F33256AA21700402E3B /* TodoListViewController.swift */,
 				AA54C6B22563E02F009248A4 /* LoginViewController.swift */,
 				AA72180C255EAEF700A67830 /* GroupListViewController.swift */,
 			);
@@ -448,7 +454,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA614F34256AA21700402E3B /* TodoListViewController.swift in Sources */,
 				AA72180D255EAEF700A67830 /* GroupListViewController.swift in Sources */,
+				AA8BC49B256B6B6D001774D5 /* CategoryViewController.swift in Sources */,
 				AA62873E255FA4950049E6F1 /* GroupModel.swift in Sources */,
 				AA7217DB255E8AC000A67830 /* AppDelegate.swift in Sources */,
 				AA54C6B32563E02F009248A4 /* LoginViewController.swift in Sources */,
