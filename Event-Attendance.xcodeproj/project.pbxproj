@@ -14,8 +14,12 @@
 		AA54C6B02563732C009248A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA54C6AE2563732C009248A4 /* GoogleService-Info.plist */; };
 		AA54C6B12563732C009248A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA54C6AE2563732C009248A4 /* GoogleService-Info.plist */; };
 		AA54C6B32563E02F009248A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA54C6B22563E02F009248A4 /* LoginViewController.swift */; };
-		AA614F34256AA21700402E3B /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA614F33256AA21700402E3B /* TodoListViewController.swift */; };
 		AA62873E255FA4950049E6F1 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA62873D255FA4950049E6F1 /* GroupModel.swift */; };
+		AA71F02F256CE01000D413DF /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71F02C256CE01000D413DF /* SwipeTableViewController.swift */; };
+		AA71F030256CE01000D413DF /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71F02D256CE01000D413DF /* TodoListViewController.swift */; };
+		AA71F031256CE01000D413DF /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71F02E256CE01000D413DF /* CategoryViewController.swift */; };
+		AA71F033256CE03800D413DF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71F032256CE03800D413DF /* Category.swift */; };
+		AA71F035256CE04500D413DF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71F034256CE04500D413DF /* Item.swift */; };
 		AA7217DB255E8AC000A67830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7217DA255E8AC000A67830 /* AppDelegate.swift */; };
 		AA7217DD255E8AC000A67830 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7217DC255E8AC000A67830 /* SceneDelegate.swift */; };
 		AA7217E2255E8AC000A67830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7217E0255E8AC000A67830 /* Main.storyboard */; };
@@ -24,7 +28,6 @@
 		AA7217F2255E8AC200A67830 /* Event_AttendanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7217F1255E8AC200A67830 /* Event_AttendanceTests.swift */; };
 		AA7217FD255E8AC200A67830 /* Event_AttendanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7217FC255E8AC200A67830 /* Event_AttendanceUITests.swift */; };
 		AA72180D255EAEF700A67830 /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72180C255EAEF700A67830 /* GroupListViewController.swift */; };
-		AA8BC49B256B6B6D001774D5 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8BC49A256B6B6D001774D5 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +60,12 @@
 		AA07F26125653EE100917CC4 /* Event-Attendance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Event-Attendance.entitlements"; sourceTree = "<group>"; };
 		AA54C6AE2563732C009248A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AA54C6B22563E02F009248A4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		AA614F33256AA21700402E3B /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		AA62873D255FA4950049E6F1 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		AA71F02C256CE01000D413DF /* SwipeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeTableViewController.swift; path = "Event-Attendance/Controllers/SwipeTableViewController.swift"; sourceTree = SOURCE_ROOT; };
+		AA71F02D256CE01000D413DF /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodoListViewController.swift; path = "Event-Attendance/Controllers/TodoListViewController.swift"; sourceTree = SOURCE_ROOT; };
+		AA71F02E256CE01000D413DF /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryViewController.swift; path = "Event-Attendance/Controllers/CategoryViewController.swift"; sourceTree = SOURCE_ROOT; };
+		AA71F032256CE03800D413DF /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Category.swift; path = "Event-Attendance/Data Model/Category.swift"; sourceTree = SOURCE_ROOT; };
+		AA71F034256CE04500D413DF /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = "Event-Attendance/Data Model/Item.swift"; sourceTree = SOURCE_ROOT; };
 		AA7217D7255E8AC000A67830 /* Event-Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Event-Attendance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7217DA255E8AC000A67830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA7217DC255E8AC000A67830 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +80,6 @@
 		AA7217FC255E8AC200A67830 /* Event_AttendanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_AttendanceUITests.swift; sourceTree = "<group>"; };
 		AA7217FE255E8AC200A67830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA72180C255EAEF700A67830 /* GroupListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
-		AA8BC49A256B6B6D001774D5 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +155,6 @@
 				AA7217DA255E8AC000A67830 /* AppDelegate.swift */,
 				AA7217DC255E8AC000A67830 /* SceneDelegate.swift */,
 				AA7217E0255E8AC000A67830 /* Main.storyboard */,
-				AA8BC49A256B6B6D001774D5 /* CategoryViewController.swift */,
 				AA7217E3255E8AC200A67830 /* Assets.xcassets */,
 				AA7217E5255E8AC200A67830 /* LaunchScreen.storyboard */,
 				AA7217E8255E8AC200A67830 /* Info.plist */,
@@ -180,6 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				AA62873D255FA4950049E6F1 /* GroupModel.swift */,
+				AA71F032256CE03800D413DF /* Category.swift */,
+				AA71F034256CE04500D413DF /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,9 +194,11 @@
 		AA72180B255EAEF700A67830 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AA614F33256AA21700402E3B /* TodoListViewController.swift */,
 				AA54C6B22563E02F009248A4 /* LoginViewController.swift */,
 				AA72180C255EAEF700A67830 /* GroupListViewController.swift */,
+				AA71F02E256CE01000D413DF /* CategoryViewController.swift */,
+				AA71F02C256CE01000D413DF /* SwipeTableViewController.swift */,
+				AA71F02D256CE01000D413DF /* TodoListViewController.swift */,
 			);
 			name = View;
 			path = "Event-Attendance/View";
@@ -454,12 +463,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA614F34256AA21700402E3B /* TodoListViewController.swift in Sources */,
+				AA71F030256CE01000D413DF /* TodoListViewController.swift in Sources */,
+				AA71F033256CE03800D413DF /* Category.swift in Sources */,
 				AA72180D255EAEF700A67830 /* GroupListViewController.swift in Sources */,
-				AA8BC49B256B6B6D001774D5 /* CategoryViewController.swift in Sources */,
 				AA62873E255FA4950049E6F1 /* GroupModel.swift in Sources */,
+				AA71F02F256CE01000D413DF /* SwipeTableViewController.swift in Sources */,
+				AA71F035256CE04500D413DF /* Item.swift in Sources */,
 				AA7217DB255E8AC000A67830 /* AppDelegate.swift in Sources */,
 				AA54C6B32563E02F009248A4 /* LoginViewController.swift in Sources */,
+				AA71F031256CE01000D413DF /* CategoryViewController.swift in Sources */,
 				AA7217DD255E8AC000A67830 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -565,7 +577,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -619,7 +631,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

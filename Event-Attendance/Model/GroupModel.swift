@@ -6,11 +6,11 @@
 //  Copyright © 2020 Masateru Maegawa. All rights reserved.
 //
 
-import Foundation
-import RealmSwift
-
-class GroupModel: Object{
-    @objc dynamic var title: String? = nil
-    // dynamic var title = ""
-}
+//import Foundation
+//import RealmSwift
+//
+//class GroupModel: Object{
+//    @objc dynamic var title: String? = nil
+//    // dynamic var title = ""
+//}
 

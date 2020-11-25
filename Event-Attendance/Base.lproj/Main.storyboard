@@ -34,7 +34,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" id="SeZ-X6-9YG"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="FaD-0T-Udj">
                             <connections>
-                                <action selector="tapAddButton:" destination="jWh-ie-LIv" id="hP0-5R-hhS"/>
+                                <action selector="addButtonPressed:" destination="jWh-ie-LIv" id="ISX-hQ-RQX"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -102,13 +102,13 @@
         <!--グループ管理-->
         <scene sceneID="arP-ch-12b">
             <objects>
-                <tableViewController id="th3-PG-d9Q" customClass="TodoListViewController" customModule="Event_Attendance" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="th3-PG-d9Q" customClass="CategoryViewController" customModule="Event_Attendance" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2VY-og-hfF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kIf-8I-Tdc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="kIf-8I-Tdc" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kIf-8I-Tdc" id="odv-sI-NVU">
@@ -123,10 +123,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="グループ管理" id="ccf-62-xK0">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dwT-Yv-kKC"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dwT-Yv-kKC">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="th3-PG-d9Q" id="xeq-i3-mdD"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="d4c-6p-nWQ" kind="show" identifier="goToItem" id="AOg-XX-B8I"/>
+                        <segue destination="d4c-6p-nWQ" kind="show" identifier="goToItems" id="AOg-XX-B8I"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="92G-gp-5pi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -136,14 +140,19 @@
         <!--イベント管理-->
         <scene sceneID="nZr-xj-Vj3">
             <objects>
-                <tableViewController id="d4c-6p-nWQ" sceneMemberID="viewController">
+                <tableViewController id="d4c-6p-nWQ" customClass="TodoListViewController" customModule="Event_Attendance" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DF2-jI-Fdm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="Zl9-C3-e86">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="o1k-7T-8Rc">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="o1k-7T-8Rc" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
+                                <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o1k-7T-8Rc" id="Xc8-Ud-cuj">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -156,7 +165,18 @@
                             <outlet property="delegate" destination="d4c-6p-nWQ" id="6NA-f3-Mbc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="イベント管理" id="qmL-cb-Fxg"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="イベント管理" id="qmL-cb-Fxg">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="nA4-yM-fgi">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="d4c-6p-nWQ" id="Icp-Ik-XQL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="Zl9-C3-e86" id="rST-cE-ehg"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tej-gz-eVd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
