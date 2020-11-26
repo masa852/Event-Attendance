@@ -33,6 +33,7 @@
                     <navigationItem key="navigationItem" title="グループ管理" id="beL-as-A10">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="SeZ-X6-9YG"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="FaD-0T-Udj">
+                            <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="addButtonPressed:" destination="jWh-ie-LIv" id="ISX-hQ-RQX"/>
                             </connections>
@@ -124,6 +125,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="グループ管理" id="ccf-62-xK0">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="dwT-Yv-kKC">
+                            <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="addButtonPressed:" destination="th3-PG-d9Q" id="xeq-i3-mdD"/>
                             </connections>
@@ -145,14 +147,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="Zl9-C3-e86">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="o1k-7T-8Rc" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
-                                <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o1k-7T-8Rc" id="Xc8-Ud-cuj">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -168,15 +165,13 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="イベント管理" id="qmL-cb-Fxg">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="nA4-yM-fgi">
+                            <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="addButtonPressed:" destination="d4c-6p-nWQ" id="Icp-Ik-XQL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="searchBar" destination="Zl9-C3-e86" id="rST-cE-ehg"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tej-gz-eVd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
