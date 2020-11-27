@@ -13,13 +13,12 @@
 		AA54C6AF2563732C009248A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA54C6AE2563732C009248A4 /* GoogleService-Info.plist */; };
 		AA54C6B02563732C009248A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA54C6AE2563732C009248A4 /* GoogleService-Info.plist */; };
 		AA54C6B12563732C009248A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA54C6AE2563732C009248A4 /* GoogleService-Info.plist */; };
-		AA54C6B32563E02F009248A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA54C6B22563E02F009248A4 /* LoginViewController.swift */; };
-		AA62873E255FA4950049E6F1 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA62873D255FA4950049E6F1 /* GroupModel.swift */; };
-		AA71F02F256CE01000D413DF /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71F02C256CE01000D413DF /* SwipeTableViewController.swift */; };
-		AA71F030256CE01000D413DF /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71F02D256CE01000D413DF /* TodoListViewController.swift */; };
-		AA71F031256CE01000D413DF /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71F02E256CE01000D413DF /* CategoryViewController.swift */; };
-		AA71F033256CE03800D413DF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71F032256CE03800D413DF /* Category.swift */; };
-		AA71F035256CE04500D413DF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA71F034256CE04500D413DF /* Item.swift */; };
+		AA6F6D492570D99300CD1F81 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6F6D482570D99300CD1F81 /* GroupViewController.swift */; };
+		AA6F6D4B2570D99700CD1F81 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6F6D4A2570D99700CD1F81 /* EventViewController.swift */; };
+		AA6F6D4D2570D99A00CD1F81 /* AttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6F6D4C2570D99A00CD1F81 /* AttendanceViewController.swift */; };
+		AA6F6D512570D9CA00CD1F81 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6F6D502570D9CA00CD1F81 /* Event.swift */; };
+		AA6F6D532570DFC100CD1F81 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6F6D522570DFC100CD1F81 /* SwipeTableViewController.swift */; };
+		AA6F6D552570DFDE00CD1F81 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6F6D542570DFDE00CD1F81 /* Group.swift */; };
 		AA7217DB255E8AC000A67830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7217DA255E8AC000A67830 /* AppDelegate.swift */; };
 		AA7217DD255E8AC000A67830 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7217DC255E8AC000A67830 /* SceneDelegate.swift */; };
 		AA7217E2255E8AC000A67830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7217E0255E8AC000A67830 /* Main.storyboard */; };
@@ -27,7 +26,6 @@
 		AA7217E7255E8AC200A67830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7217E5255E8AC200A67830 /* LaunchScreen.storyboard */; };
 		AA7217F2255E8AC200A67830 /* Event_AttendanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7217F1255E8AC200A67830 /* Event_AttendanceTests.swift */; };
 		AA7217FD255E8AC200A67830 /* Event_AttendanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7217FC255E8AC200A67830 /* Event_AttendanceUITests.swift */; };
-		AA72180D255EAEF700A67830 /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72180C255EAEF700A67830 /* GroupListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,13 +57,12 @@
 		A3E72814BA0692C5D8EF830D /* Pods-Event-Attendance-Event-AttendanceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Event-Attendance-Event-AttendanceUITests.debug.xcconfig"; path = "Target Support Files/Pods-Event-Attendance-Event-AttendanceUITests/Pods-Event-Attendance-Event-AttendanceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA07F26125653EE100917CC4 /* Event-Attendance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Event-Attendance.entitlements"; sourceTree = "<group>"; };
 		AA54C6AE2563732C009248A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		AA54C6B22563E02F009248A4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		AA62873D255FA4950049E6F1 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
-		AA71F02C256CE01000D413DF /* SwipeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeTableViewController.swift; path = "Event-Attendance/Controllers/SwipeTableViewController.swift"; sourceTree = SOURCE_ROOT; };
-		AA71F02D256CE01000D413DF /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodoListViewController.swift; path = "Event-Attendance/Controllers/TodoListViewController.swift"; sourceTree = SOURCE_ROOT; };
-		AA71F02E256CE01000D413DF /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryViewController.swift; path = "Event-Attendance/Controllers/CategoryViewController.swift"; sourceTree = SOURCE_ROOT; };
-		AA71F032256CE03800D413DF /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Category.swift; path = "Event-Attendance/Data Model/Category.swift"; sourceTree = SOURCE_ROOT; };
-		AA71F034256CE04500D413DF /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = "Event-Attendance/Data Model/Item.swift"; sourceTree = SOURCE_ROOT; };
+		AA6F6D482570D99300CD1F81 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupViewController.swift; path = "/Users/MasateruMaegawa/Desktop/Original/Event-Attendance/Event-Attendance/View/GroupViewController.swift"; sourceTree = "<absolute>"; };
+		AA6F6D4A2570D99700CD1F81 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventViewController.swift; path = "/Users/MasateruMaegawa/Desktop/Original/Event-Attendance/Event-Attendance/View/EventViewController.swift"; sourceTree = "<absolute>"; };
+		AA6F6D4C2570D99A00CD1F81 /* AttendanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AttendanceViewController.swift; path = "/Users/MasateruMaegawa/Desktop/Original/Event-Attendance/Event-Attendance/View/AttendanceViewController.swift"; sourceTree = "<absolute>"; };
+		AA6F6D502570D9CA00CD1F81 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Event.swift; path = "/Users/MasateruMaegawa/Desktop/Original/Event-Attendance/Event-Attendance/Model/Event.swift"; sourceTree = "<absolute>"; };
+		AA6F6D522570DFC100CD1F81 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwipeTableViewController.swift; path = "/Users/MasateruMaegawa/Desktop/Original/Event-Attendance/Event-Attendance/View/SwipeTableViewController.swift"; sourceTree = "<absolute>"; };
+		AA6F6D542570DFDE00CD1F81 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Group.swift; path = "/Users/MasateruMaegawa/Desktop/Original/Event-Attendance/Event-Attendance/Model/Group.swift"; sourceTree = "<absolute>"; };
 		AA7217D7255E8AC000A67830 /* Event-Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Event-Attendance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7217DA255E8AC000A67830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA7217DC255E8AC000A67830 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,7 +76,6 @@
 		AA7217F8255E8AC200A67830 /* Event-AttendanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Event-AttendanceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7217FC255E8AC200A67830 /* Event_AttendanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_AttendanceUITests.swift; sourceTree = "<group>"; };
 		AA7217FE255E8AC200A67830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA72180C255EAEF700A67830 /* GroupListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,9 +180,8 @@
 		AA72180A255EAEEE00A67830 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AA62873D255FA4950049E6F1 /* GroupModel.swift */,
-				AA71F032256CE03800D413DF /* Category.swift */,
-				AA71F034256CE04500D413DF /* Item.swift */,
+				AA6F6D542570DFDE00CD1F81 /* Group.swift */,
+				AA6F6D502570D9CA00CD1F81 /* Event.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,11 +189,10 @@
 		AA72180B255EAEF700A67830 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AA54C6B22563E02F009248A4 /* LoginViewController.swift */,
-				AA72180C255EAEF700A67830 /* GroupListViewController.swift */,
-				AA71F02E256CE01000D413DF /* CategoryViewController.swift */,
-				AA71F02C256CE01000D413DF /* SwipeTableViewController.swift */,
-				AA71F02D256CE01000D413DF /* TodoListViewController.swift */,
+				AA6F6D522570DFC100CD1F81 /* SwipeTableViewController.swift */,
+				AA6F6D482570D99300CD1F81 /* GroupViewController.swift */,
+				AA6F6D4A2570D99700CD1F81 /* EventViewController.swift */,
+				AA6F6D4C2570D99A00CD1F81 /* AttendanceViewController.swift */,
 			);
 			name = View;
 			path = "Event-Attendance/View";
@@ -463,16 +457,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA71F030256CE01000D413DF /* TodoListViewController.swift in Sources */,
-				AA71F033256CE03800D413DF /* Category.swift in Sources */,
-				AA72180D255EAEF700A67830 /* GroupListViewController.swift in Sources */,
-				AA62873E255FA4950049E6F1 /* GroupModel.swift in Sources */,
-				AA71F02F256CE01000D413DF /* SwipeTableViewController.swift in Sources */,
-				AA71F035256CE04500D413DF /* Item.swift in Sources */,
+				AA6F6D512570D9CA00CD1F81 /* Event.swift in Sources */,
+				AA6F6D4B2570D99700CD1F81 /* EventViewController.swift in Sources */,
+				AA6F6D492570D99300CD1F81 /* GroupViewController.swift in Sources */,
+				AA6F6D552570DFDE00CD1F81 /* Group.swift in Sources */,
+				AA6F6D532570DFC100CD1F81 /* SwipeTableViewController.swift in Sources */,
 				AA7217DB255E8AC000A67830 /* AppDelegate.swift in Sources */,
-				AA54C6B32563E02F009248A4 /* LoginViewController.swift in Sources */,
-				AA71F031256CE01000D413DF /* CategoryViewController.swift in Sources */,
 				AA7217DD255E8AC000A67830 /* SceneDelegate.swift in Sources */,
+				AA6F6D4D2570D99A00CD1F81 /* AttendanceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

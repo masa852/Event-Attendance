@@ -8,102 +8,9 @@
     </dependencies>
     <scenes>
         <!--グループ管理-->
-        <scene sceneID="cVm-Il-3oZ">
-            <objects>
-                <tableViewController id="jWh-ie-LIv" customClass="GroupListViewController" customModule="Event_Attendance" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="K8L-OC-FHq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" id="x0T-hd-0mF">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x0T-hd-0mF" id="jcW-6s-x5V">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="jWh-ie-LIv" id="MIV-ri-iYs"/>
-                            <outlet property="delegate" destination="jWh-ie-LIv" id="DPd-hU-Mu5"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="グループ管理" id="beL-as-A10">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="SeZ-X6-9YG"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FaD-0T-Udj">
-                            <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="addButtonPressed:" destination="jWh-ie-LIv" id="ISX-hQ-RQX"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="groupTableView" destination="K8L-OC-FHq" id="Ru0-ad-yne"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yf7-r2-KnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1850.7246376811595" y="112.5"/>
-        </scene>
-        <!--Event View Controller-->
-        <scene sceneID="u4y-Dy-7ax">
-            <objects>
-                <viewController title="Event View Controller" id="q3g-zM-P4i" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7hq-VW-G2i">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="WVP-gf-u4X"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="m3N-f0-8So" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2659" y="114"/>
-        </scene>
-        <!--Login View Controller-->
-        <scene sceneID="JXD-DQ-tZF">
-            <objects>
-                <viewController id="K8x-BQ-xsN" customClass="LoginViewController" customModule="Event_Attendance" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7Xp-O1-qeL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bi0-lF-hlD" customClass="GIDSignInButton">
-                                <rect key="frame" x="87" y="576" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="B3s-5G-JKB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="axD-cx-0Qi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3587" y="106"/>
-        </scene>
-        <!--EmailViewController-->
-        <scene sceneID="21C-OQ-V4V">
-            <objects>
-                <viewController title="EmailViewController" id="GeK-Ih-wTK" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3a6-Le-jqy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="czk-3z-uAZ"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="QCF-pA-au9"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jkt-3a-z3J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4565" y="106"/>
-        </scene>
-        <!--グループ管理-->
         <scene sceneID="arP-ch-12b">
             <objects>
-                <tableViewController id="th3-PG-d9Q" customClass="CategoryViewController" customModule="Event_Attendance" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="th3-PG-d9Q" customClass="GroupViewController" customModule="Event_Attendance" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2VY-og-hfF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,7 +39,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="d4c-6p-nWQ" kind="show" identifier="goToItems" id="AOg-XX-B8I"/>
+                        <segue destination="d4c-6p-nWQ" kind="show" identifier="goToEvent" id="AOg-XX-B8I"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="92G-gp-5pi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -142,7 +49,7 @@
         <!--イベント管理-->
         <scene sceneID="nZr-xj-Vj3">
             <objects>
-                <tableViewController id="d4c-6p-nWQ" customClass="TodoListViewController" customModule="Event_Attendance" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="d4c-6p-nWQ" customClass="EventViewController" customModule="Event_Attendance" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DF2-jI-Fdm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,28 +79,29 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="OCv-mo-USD" kind="show" identifier="goToAttendance" id="ep1-A0-Gd8"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tej-gz-eVd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2772" y="-656"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="9bh-B0-rGX">
+        <!--View Controller-->
+        <scene sceneID="cv8-JW-ZtP">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ws6-aa-4nk" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jeS-Rg-xr7">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="jWh-ie-LIv" kind="relationship" relationship="rootViewController" id="2zN-jf-Fwu"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eJV-dK-RIu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="OCv-mo-USD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RCs-w2-icV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="fyo-kM-QyF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mag-VD-di2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oxv-eW-wba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="940.57971014492762" y="112.5"/>
+            <point key="canvasLocation" x="3732" y="-656"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WGL-jo-B3g">
