@@ -227,6 +227,7 @@
 				AA7217D4255E8AC000A67830 /* Frameworks */,
 				AA7217D5255E8AC000A67830 /* Resources */,
 				9630BA8BD300CB1BCA0F2106 /* [CP] Embed Pods Frameworks */,
+				AA6F6D5625713CB900CD1F81 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -366,6 +367,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Event-Attendance/Pods-Event-Attendance-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		AA6F6D5625713CB900CD1F81 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
 		};
 		AC43CF3B8A3E672C71B41161 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
