@@ -26,6 +26,9 @@
 		AA7217E7255E8AC200A67830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7217E5255E8AC200A67830 /* LaunchScreen.storyboard */; };
 		AA7217F2255E8AC200A67830 /* Event_AttendanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7217F1255E8AC200A67830 /* Event_AttendanceTests.swift */; };
 		AA7217FD255E8AC200A67830 /* Event_AttendanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7217FC255E8AC200A67830 /* Event_AttendanceUITests.swift */; };
+		AA78AE94257342E000B4F09B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78AE93257342E000B4F09B /* SettingViewController.swift */; };
+		AA809C382571FFC70078B43C /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA809C372571FFC70078B43C /* SideMenuViewController.swift */; };
+		AA809C3A25724FC70078B43C /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA809C3925724FC70078B43C /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,9 @@
 		AA7217F8255E8AC200A67830 /* Event-AttendanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Event-AttendanceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7217FC255E8AC200A67830 /* Event_AttendanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_AttendanceUITests.swift; sourceTree = "<group>"; };
 		AA7217FE255E8AC200A67830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA78AE93257342E000B4F09B /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		AA809C372571FFC70078B43C /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuViewController.swift; path = "Event-Attendance/View/SideMenuViewController.swift"; sourceTree = SOURCE_ROOT; };
+		AA809C3925724FC70078B43C /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +199,9 @@
 				AA6F6D482570D99300CD1F81 /* GroupViewController.swift */,
 				AA6F6D4A2570D99700CD1F81 /* EventViewController.swift */,
 				AA6F6D4C2570D99A00CD1F81 /* AttendanceViewController.swift */,
+				AA809C372571FFC70078B43C /* SideMenuViewController.swift */,
+				AA809C3925724FC70078B43C /* RegistrationViewController.swift */,
+				AA78AE93257342E000B4F09B /* SettingViewController.swift */,
 			);
 			name = View;
 			path = "Event-Attendance/View";
@@ -479,10 +488,13 @@
 				AA6F6D4B2570D99700CD1F81 /* EventViewController.swift in Sources */,
 				AA6F6D492570D99300CD1F81 /* GroupViewController.swift in Sources */,
 				AA6F6D552570DFDE00CD1F81 /* Group.swift in Sources */,
+				AA809C3A25724FC70078B43C /* RegistrationViewController.swift in Sources */,
 				AA6F6D532570DFC100CD1F81 /* SwipeTableViewController.swift in Sources */,
 				AA7217DB255E8AC000A67830 /* AppDelegate.swift in Sources */,
 				AA7217DD255E8AC000A67830 /* SceneDelegate.swift in Sources */,
+				AA809C382571FFC70078B43C /* SideMenuViewController.swift in Sources */,
 				AA6F6D4D2570D99A00CD1F81 /* AttendanceViewController.swift in Sources */,
+				AA78AE94257342E000B4F09B /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
