@@ -32,26 +32,26 @@ class SideMenuViewController: UITableViewController {
     }
     
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 0{
-            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                   // 遷移先ViewControllerのインスタンス取得
-                   let firstView = storyboard.instantiateViewController(withIdentifier: "RegistrationView") as! RegistrationViewController
-                    firstView.modalPresentationStyle = .fullScreen
-            
-                   // 画面遷移
-                   self.present(firstView, animated: true, completion: nil)
-            // セルの選択を解除
-            tableView.deselectRow(at: indexPath, animated: true)
-        } else {
-            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-
-                   let secondView = storyboard.instantiateViewController(withIdentifier: "SettingView") as! SettingViewController
-                    secondView.modalPresentationStyle = .fullScreen
-                    self.present(secondView, animated: true, completion: nil)
-           
-            tableView.deselectRow(at: indexPath, animated: true)
-            
-        }
-    }
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        if indexPath.row == 0{
+//            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//                   // 遷移先ViewControllerのインスタンス取得
+//                   let firstView = storyboard.instantiateViewController(withIdentifier: "RegistrationView") as! RegistrationViewController
+//                    firstView.modalPresentationStyle = .fullScreen
+//            
+//                   // 画面遷移
+//                   self.present(firstView, animated: true, completion: nil)
+//            // セルの選択を解除
+//            tableView.deselectRow(at: indexPath, animated: true)
+//        } else {
+//            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//
+//                   let secondView = storyboard.instantiateViewController(withIdentifier: "SettingView") as! SettingViewController
+//                    secondView.modalPresentationStyle = .fullScreen
+//                    self.present(secondView, animated: true, completion: nil)
+//           
+//            tableView.deselectRow(at: indexPath, animated: true)
+//            
+//        }
+//    }
 }

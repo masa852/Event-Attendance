@@ -14,6 +14,8 @@ import RealmSwift
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    var selectgroup: Group?
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         

@@ -92,58 +92,109 @@
             </objects>
             <point key="canvasLocation" x="2772" y="-656"/>
         </scene>
-        <!--View Controller-->
+        <!--出欠管理-->
         <scene sceneID="cv8-JW-ZtP">
             <objects>
-                <viewController id="OCv-mo-USD" sceneMemberID="viewController">
+                <viewController title="出欠管理" id="OCv-mo-USD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RCs-w2-icV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="fyo-kM-QyF"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mag-VD-di2"/>
+                    <navigationItem key="navigationItem" title="管理" id="mag-VD-di2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cM7-0h-qJQ">
+                            <connections>
+                                <segue destination="ZQv-zs-Sau" kind="show" id="2V0-rr-cQ1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oxv-eW-wba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3732" y="-656"/>
         </scene>
-        <!--メンバー登録画面-->
-        <scene sceneID="iZH-9m-9Xx">
+        <!--メンバー登録-->
+        <scene sceneID="3Wt-e5-2lw">
             <objects>
-                <tableViewController storyboardIdentifier="RegistrationView" title="メンバー登録画面" id="Ifm-H2-SCj" customClass="RegistrationViewController" customModule="Event_Attendance" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="q4k-34-Yhg">
+                <viewController storyboardIdentifier="RegistrationView" title="メンバー登録" id="ZQv-zs-Sau" customClass="RegistrationViewController" customModule="Event_Attendance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a24-FZ-2QG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="氏名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D23-t3-PXj">
+                                <rect key="frame" x="75" y="142" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ふりがな" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUy-Xf-cpd">
+                                <rect key="frame" x="75" y="198" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="性別" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCJ-nb-Awk">
+                                <rect key="frame" x="75" y="262" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V0g-a6-eTW">
+                                <rect key="frame" x="186" y="137" width="120" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="namefield"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xl3-P4-Fuv">
+                                <rect key="frame" x="184" y="195" width="122" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="namefield"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="AQg-vO-Bjk">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AQg-vO-Bjk" id="wtZ-e8-HTD">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Ifm-H2-SCj" id="Lct-4T-UkN"/>
-                            <outlet property="delegate" destination="Ifm-H2-SCj" id="1TW-Cx-RxL"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="nmA-78-v68"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dFb-vv-K4B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="H71-bH-9VO"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="44i-xN-6c9">
+                        <barButtonItem key="rightBarButtonItem" title="save" id="8ma-Oa-EA3">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="ZQv-zs-Sau" id="6io-kx-qBr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="furiganaTextField" destination="xl3-P4-Fuv" id="Qqw-7w-QXX"/>
+                        <outlet property="nameTextField" destination="V0g-a6-eTW" id="VT2-bo-wMf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L2S-tQ-RML" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="970" y="-1385"/>
+            <point key="canvasLocation" x="3615.9420289855075" y="-1385.4910714285713"/>
         </scene>
-        <!--設定画面-->
+        <!--設定-->
         <scene sceneID="cJ4-lR-9YI">
             <objects>
-                <viewController storyboardIdentifier="SettingView" title="設定画面" id="Afu-cg-IEB" customClass="SettingViewController" customModule="Event_Attendance" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingView" title="設定" id="Afu-cg-IEB" customClass="SettingViewController" customModule="Event_Attendance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e1v-DL-Jar">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Mn-cz-YHn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="設定" id="ZP9-SD-IBE"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="zgY-Yt-iSA"/>
                     </view>
