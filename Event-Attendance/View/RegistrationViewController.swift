@@ -16,6 +16,10 @@ class RegistrationViewController: UIViewController {
     let member = Member()
     let realm = try! Realm()
     var group: Group?
+    var savegroup: Group?
+//    var event: Event?
+    
+    
 //    var selectedGroup: Group?{
 //        didSet {
 //            loadEvents()
@@ -24,9 +28,6 @@ class RegistrationViewController: UIViewController {
     
         override func viewDidLoad() {
             super.viewDidLoad()
-          var groups = realm.objects(Group.self)
-            print(groups)
-            print(group)
         }
     
 //    func loadEvents() {
@@ -37,21 +38,35 @@ class RegistrationViewController: UIViewController {
     
     @IBOutlet weak var nameTextField: UITextField!
     
+    
     @IBOutlet weak var furiganaTextField: UITextField!
     
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
 //        let agroup = realm.objects(Group.self)//.filter("ii")
 //        if let currentGroup = self.selectedGroup {
+        
+//        DispatchQueue.global().async {
+//            self.savegroup = self.appDelegate.selectgroup
+////            self.group?.registmembers.append(self.member)
+////            appDelegate.anothergroup? = self.group?.registmembers
+//        }
+        
             try! realm.write {
+//                event = appDelegate.selectevent
                 group = appDelegate.selectgroup
                 member.name = nameTextField.text!
-                member.furigana = furiganaTextField.text!
+//                member.furigana = furiganaTextField.text!
                 print(member)
  //               print(selectedGroup)
  //               let someDogs = realm.objects(Member.self).filter("name contains 'Fido'")
  //               currentGroup.members.append(objectsIn: someDogs)
  //               group.members.append(member)
                 group?.registmembers.append(member)
+                
+                print(member)
+                print(group?.registmembers)
+//                event?.addmembers.append(group!.registmembers)
+                
         }
     }
 //}
