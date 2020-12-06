@@ -106,24 +106,24 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="WGV-TN-4iF"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="F3v-fj-7Va"/>
                             </scrollView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hzr-3u-EsO" customClass="ButtonBarView" customModule="XLPagerTabStrip">
-                                <rect key="frame" x="59" y="88" width="297" height="40"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hzr-3u-EsO" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="88" width="414" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oGl-cr-JMq">
-                                    <size key="itemSize" width="247" height="33"/>
+                                    <size key="itemSize" width="337" height="35"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ymU-KD-T0b">
-                                        <rect key="frame" x="25" y="0.0" width="247" height="33"/>
+                                        <rect key="frame" x="38.5" y="0.0" width="337" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rmD-fQ-qMf">
-                                            <rect key="frame" x="0.0" y="0.0" width="247" height="33"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="337" height="35"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="247" height="33"/>
+                                        <size key="customSize" width="337" height="35"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -131,9 +131,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="mJK-3f-UBW" firstAttribute="top" secondItem="hzr-3u-EsO" secondAttribute="bottom" constant="8" id="2yN-FM-cu5"/>
+                            <constraint firstItem="hzr-3u-EsO" firstAttribute="top" secondItem="fyo-kM-QyF" secondAttribute="top" id="D9O-TY-yfg"/>
                             <constraint firstItem="fyo-kM-QyF" firstAttribute="trailing" secondItem="hzr-3u-EsO" secondAttribute="trailing" constant="58" id="HZ2-fu-pgT"/>
+                            <constraint firstItem="hzr-3u-EsO" firstAttribute="leading" secondItem="fyo-kM-QyF" secondAttribute="leading" id="J88-Ka-gQc"/>
+                            <constraint firstItem="mJK-3f-UBW" firstAttribute="bottom" secondItem="fyo-kM-QyF" secondAttribute="bottom" id="LqF-fo-awW"/>
+                            <constraint firstItem="hzr-3u-EsO" firstAttribute="trailing" secondItem="fyo-kM-QyF" secondAttribute="trailing" id="MBD-h1-auZ"/>
                             <constraint firstItem="hzr-3u-EsO" firstAttribute="leading" secondItem="fyo-kM-QyF" secondAttribute="leading" constant="59" id="VOF-uW-ZAY"/>
+                            <constraint firstItem="mJK-3f-UBW" firstAttribute="leading" secondItem="fyo-kM-QyF" secondAttribute="leading" id="dkv-TS-4sJ"/>
+                            <constraint firstItem="mJK-3f-UBW" firstAttribute="top" secondItem="RCs-w2-icV" secondAttribute="top" constant="136" id="jKJ-vh-sfd"/>
                             <constraint firstItem="hzr-3u-EsO" firstAttribute="top" secondItem="fyo-kM-QyF" secondAttribute="top" id="mZh-8z-Kgv"/>
+                            <constraint firstItem="mJK-3f-UBW" firstAttribute="top" secondItem="hzr-3u-EsO" secondAttribute="bottom" constant="8" id="sDg-dx-mmW"/>
+                            <constraint firstItem="mJK-3f-UBW" firstAttribute="centerX" secondItem="hzr-3u-EsO" secondAttribute="centerX" id="tSN-24-GnL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fyo-kM-QyF"/>
                     </view>
@@ -148,7 +156,6 @@
                     <connections>
                         <outlet property="buttonBarView" destination="hzr-3u-EsO" id="0Vg-4p-ugy"/>
                         <outlet property="containerView" destination="mJK-3f-UBW" id="AYa-Hm-yre"/>
-                        <outletCollection property="attendCollectionView" destination="hzr-3u-EsO" collectionClass="NSMutableArray" id="Ba2-6G-thc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oxv-eW-wba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
