@@ -30,9 +30,9 @@
 		AA809C382571FFC70078B43C /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA809C372571FFC70078B43C /* SideMenuViewController.swift */; };
 		AA809C3A25724FC70078B43C /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA809C3925724FC70078B43C /* RegistrationViewController.swift */; };
 		AAC94AA22573BCF100C7BF9D /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC94AA12573BCF100C7BF9D /* Member.swift */; };
-		AAEA3977257B37DE00E6EA9F /* AttendanceTabMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA3976257B37DE00E6EA9F /* AttendanceTabMainView.swift */; };
-		AAEA3979257B37E100E6EA9F /* AttendanceTabMemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA3978257B37E100E6EA9F /* AttendanceTabMemberView.swift */; };
-		AAEA397B257B37E400E6EA9F /* AttendanceTabMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA397A257B37E400E6EA9F /* AttendanceTabMoneyView.swift */; };
+		AAEA3977257B37DE00E6EA9F /* AttendanceTabMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA3976257B37DE00E6EA9F /* AttendanceTabMainViewController.swift */; };
+		AAEA3979257B37E100E6EA9F /* AttendanceTabMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA3978257B37E100E6EA9F /* AttendanceTabMemberViewController.swift */; };
+		AAEA397B257B37E400E6EA9F /* AttendanceTabMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA397A257B37E400E6EA9F /* AttendanceTabMoneyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,9 +87,9 @@
 		AA809C372571FFC70078B43C /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuViewController.swift; path = "Event-Attendance/View/SideMenuViewController.swift"; sourceTree = SOURCE_ROOT; };
 		AA809C3925724FC70078B43C /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		AAC94AA12573BCF100C7BF9D /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
-		AAEA3976257B37DE00E6EA9F /* AttendanceTabMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AttendanceTabMainView.swift; path = "/Users/MasateruMaegawa/Desktop/Original/Event-Attendance/Event-Attendance/View/AttendanceTabMainView.swift"; sourceTree = "<absolute>"; };
-		AAEA3978257B37E100E6EA9F /* AttendanceTabMemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AttendanceTabMemberView.swift; path = "/Users/MasateruMaegawa/Desktop/Original/Event-Attendance/Event-Attendance/View/AttendanceTabMemberView.swift"; sourceTree = "<absolute>"; };
-		AAEA397A257B37E400E6EA9F /* AttendanceTabMoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AttendanceTabMoneyView.swift; path = "/Users/MasateruMaegawa/Desktop/Original/Event-Attendance/Event-Attendance/View/AttendanceTabMoneyView.swift"; sourceTree = "<absolute>"; };
+		AAEA3976257B37DE00E6EA9F /* AttendanceTabMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AttendanceTabMainViewController.swift; path = "/Users/MasateruMaegawa/Desktop/Original/Event-Attendance/Event-Attendance/View/AttendanceTabMainViewController.swift"; sourceTree = "<absolute>"; };
+		AAEA3978257B37E100E6EA9F /* AttendanceTabMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AttendanceTabMemberViewController.swift; path = "/Users/MasateruMaegawa/Desktop/Original/Event-Attendance/Event-Attendance/View/AttendanceTabMemberViewController.swift"; sourceTree = "<absolute>"; };
+		AAEA397A257B37E400E6EA9F /* AttendanceTabMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AttendanceTabMoneyViewController.swift; path = "/Users/MasateruMaegawa/Desktop/Original/Event-Attendance/Event-Attendance/View/AttendanceTabMoneyViewController.swift"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +131,17 @@
 				82B9A5AAE2F36258FC1AD5BC /* Pods-Event-AttendanceTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AA5C9A0B257DCAEB006044FE /* AttendanceViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AA6F6D4C2570D99A00CD1F81 /* AttendanceViewController.swift */,
+				AAEA3976257B37DE00E6EA9F /* AttendanceTabMainViewController.swift */,
+				AAEA3978257B37E100E6EA9F /* AttendanceTabMemberViewController.swift */,
+				AAEA397A257B37E400E6EA9F /* AttendanceTabMoneyViewController.swift */,
+			);
+			path = AttendanceViewController;
 			sourceTree = "<group>";
 		};
 		AA7217CE255E8AC000A67830 = {
@@ -204,15 +215,12 @@
 		AA72180B255EAEF700A67830 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AA6F6D522570DFC100CD1F81 /* SwipeTableViewController.swift */,
+				AA5C9A0B257DCAEB006044FE /* AttendanceViewController */,
 				AA6F6D482570D99300CD1F81 /* GroupViewController.swift */,
 				AA6F6D4A2570D99700CD1F81 /* EventViewController.swift */,
-				AA6F6D4C2570D99A00CD1F81 /* AttendanceViewController.swift */,
-				AAEA3976257B37DE00E6EA9F /* AttendanceTabMainView.swift */,
-				AAEA3978257B37E100E6EA9F /* AttendanceTabMemberView.swift */,
-				AAEA397A257B37E400E6EA9F /* AttendanceTabMoneyView.swift */,
-				AA809C372571FFC70078B43C /* SideMenuViewController.swift */,
 				AA809C3925724FC70078B43C /* RegistrationViewController.swift */,
+				AA6F6D522570DFC100CD1F81 /* SwipeTableViewController.swift */,
+				AA809C372571FFC70078B43C /* SideMenuViewController.swift */,
 				AA78AE93257342E000B4F09B /* SettingViewController.swift */,
 			);
 			name = View;
@@ -499,14 +507,14 @@
 				AA6F6D512570D9CA00CD1F81 /* Event.swift in Sources */,
 				AA6F6D4B2570D99700CD1F81 /* EventViewController.swift in Sources */,
 				AA6F6D492570D99300CD1F81 /* GroupViewController.swift in Sources */,
-				AAEA3979257B37E100E6EA9F /* AttendanceTabMemberView.swift in Sources */,
+				AAEA3979257B37E100E6EA9F /* AttendanceTabMemberViewController.swift in Sources */,
 				AA6F6D552570DFDE00CD1F81 /* Group.swift in Sources */,
 				AA809C3A25724FC70078B43C /* RegistrationViewController.swift in Sources */,
-				AAEA3977257B37DE00E6EA9F /* AttendanceTabMainView.swift in Sources */,
+				AAEA3977257B37DE00E6EA9F /* AttendanceTabMainViewController.swift in Sources */,
 				AA6F6D532570DFC100CD1F81 /* SwipeTableViewController.swift in Sources */,
 				AA7217DB255E8AC000A67830 /* AppDelegate.swift in Sources */,
 				AAC94AA22573BCF100C7BF9D /* Member.swift in Sources */,
-				AAEA397B257B37E400E6EA9F /* AttendanceTabMoneyView.swift in Sources */,
+				AAEA397B257B37E400E6EA9F /* AttendanceTabMoneyViewController.swift in Sources */,
 				AA7217DD255E8AC000A67830 /* SceneDelegate.swift in Sources */,
 				AA809C382571FFC70078B43C /* SideMenuViewController.swift in Sources */,
 				AA6F6D4D2570D99A00CD1F81 /* AttendanceViewController.swift in Sources */,

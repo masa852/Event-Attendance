@@ -8,7 +8,7 @@
 import Foundation
 import XLPagerTabStrip  //インポートして
 
-class GreenViewController: UIViewController, IndicatorInfoProvider {    // 「IndicatorInfoProvider」を追加
+class AttendanceTabMoneyViewController: UIViewController, IndicatorInfoProvider {    // 「IndicatorInfoProvider」を追加
     
     // タブのタイトルを設定
     var itemInfo: IndicatorInfo = "集金"

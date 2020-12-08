@@ -8,7 +8,7 @@
 import Foundation
 import XLPagerTabStrip  //インポートして
 
-class BlueViewController: UIViewController, IndicatorInfoProvider {    // 「IndicatorInfoProvider」を追加
+class AttendanceTabMemberViewController: UIViewController, IndicatorInfoProvider {    // 「IndicatorInfoProvider」を追加
     
     // タブのタイトルを設定
     var itemInfo: IndicatorInfo = "メンバー"

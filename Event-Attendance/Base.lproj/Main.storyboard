@@ -106,7 +106,7 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="WGV-TN-4iF"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="F3v-fj-7Va"/>
                             </scrollView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hzr-3u-EsO" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hzr-3u-EsO" customClass="ButtonBarView" customModule="XLPagerTabStrip">
                                 <rect key="frame" x="0.0" y="88" width="414" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oGl-cr-JMq">
@@ -132,11 +132,9 @@
                         <constraints>
                             <constraint firstItem="mJK-3f-UBW" firstAttribute="top" secondItem="hzr-3u-EsO" secondAttribute="bottom" constant="8" id="2yN-FM-cu5"/>
                             <constraint firstItem="hzr-3u-EsO" firstAttribute="top" secondItem="fyo-kM-QyF" secondAttribute="top" id="D9O-TY-yfg"/>
-                            <constraint firstItem="fyo-kM-QyF" firstAttribute="trailing" secondItem="hzr-3u-EsO" secondAttribute="trailing" constant="58" id="HZ2-fu-pgT"/>
                             <constraint firstItem="hzr-3u-EsO" firstAttribute="leading" secondItem="fyo-kM-QyF" secondAttribute="leading" id="J88-Ka-gQc"/>
                             <constraint firstItem="mJK-3f-UBW" firstAttribute="bottom" secondItem="fyo-kM-QyF" secondAttribute="bottom" id="LqF-fo-awW"/>
                             <constraint firstItem="hzr-3u-EsO" firstAttribute="trailing" secondItem="fyo-kM-QyF" secondAttribute="trailing" id="MBD-h1-auZ"/>
-                            <constraint firstItem="hzr-3u-EsO" firstAttribute="leading" secondItem="fyo-kM-QyF" secondAttribute="leading" constant="59" id="VOF-uW-ZAY"/>
                             <constraint firstItem="mJK-3f-UBW" firstAttribute="leading" secondItem="fyo-kM-QyF" secondAttribute="leading" id="dkv-TS-4sJ"/>
                             <constraint firstItem="mJK-3f-UBW" firstAttribute="top" secondItem="RCs-w2-icV" secondAttribute="top" constant="136" id="jKJ-vh-sfd"/>
                             <constraint firstItem="hzr-3u-EsO" firstAttribute="top" secondItem="fyo-kM-QyF" secondAttribute="top" id="mZh-8z-Kgv"/>
@@ -165,7 +163,7 @@
         <!--出欠表示-->
         <scene sceneID="Mzs-i0-iyJ">
             <objects>
-                <viewController storyboardIdentifier="TabMainViewController" title="出欠表示" id="z9Y-xu-a96" customClass="RedViewController" customModule="Event_Attendance" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TabMainViewController" title="出欠表示" id="z9Y-xu-a96" customClass="AttendanceTabMainViewController" customModule="Event_Attendance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bMP-1b-Psh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,7 +178,7 @@
         <!--出欠メンバー追加-->
         <scene sceneID="hYb-fX-Gbb">
             <objects>
-                <viewController storyboardIdentifier="TabMemberViewController" title="出欠メンバー追加" id="4rJ-sO-fhN" customClass="BlueViewController" customModule="Event_Attendance" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TabMemberViewController" title="出欠メンバー追加" id="4rJ-sO-fhN" customClass="AttendanceTabMemberViewController" customModule="Event_Attendance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q6l-Za-Lvt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,7 +211,7 @@
         <!--出欠集金-->
         <scene sceneID="QzY-MQ-Wav">
             <objects>
-                <viewController storyboardIdentifier="TabMoneyViewController" title="出欠集金" id="bTa-kU-2kC" customClass="GreenViewController" customModule="Event_Attendance" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TabMoneyViewController" title="出欠集金" id="bTa-kU-2kC" customClass="AttendanceTabMoneyViewController" customModule="Event_Attendance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="en7-Qs-GlK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
